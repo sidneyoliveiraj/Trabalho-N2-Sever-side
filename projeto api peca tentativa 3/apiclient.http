@@ -1,0 +1,29 @@
+### Listar todas as peças
+GET http://localhost:3000/api/pecas
+
+### Obter peça por ID 
+GET http://localhost:3000/api/pecas/1
+
+### Criar nova peça
+POST http://localhost:3000/api/pecas
+Content-Type: application/json
+
+{
+  "nome_peca": "Parafuso",
+  "descr_peca": "Parafuso de roda"
+}
+
+### Atualizar peça
+PUT http://localhost:3000/api/pecas/1
+Content-Type: application/json
+
+{
+  "nome_peca": "Parafuso Phillips",
+  "descr_peca": "Parafuso Phillips de roda"
+}
+
+### Deletar peça
+DELETE http://localhost:3000/api/pecas/1
+
+### Buscar peça por nome
+GET http://localhost:3000/api/pecas/buscar/parafuso
