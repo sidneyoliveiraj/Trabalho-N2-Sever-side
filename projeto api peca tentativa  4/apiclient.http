@@ -1,0 +1,43 @@
+# Listar todas as peças
+GET http://localhost:3000/pecas
+Accept: application/json
+
+###
+
+# Obter uma peça por ID
+GET http://localhost:3000/pecas/2
+Accept: application/json
+
+###
+
+# Criar uma nova peça
+POST http://localhost:3000/pecas
+Content-Type: application/json
+
+{
+  "nome_peca": "Motor",
+  "descr_peca": "Motor V8"
+}
+
+###
+
+# Atualizar uma peça existente
+PUT http://localhost:3000/pecas/1
+Content-Type: application/json
+
+{
+  "nome_peca": "Motor v12",
+  "descr_peca": "Motor V12"
+}
+
+###
+
+# Deletar uma peça
+DELETE http://localhost:3000/pecas/7
+Accept: application/json
+
+###
+
+# Buscar peças por nome
+GET http://localhost:3000/pecas/buscar/Motor
+Accept: application/json
